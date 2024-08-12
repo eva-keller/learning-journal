@@ -1,0 +1,21 @@
+I am spending this week on the first course in the OSSU curriculum, Harvard's CS50 Introduction to programming with Python. 
+https://cs50.harvard.edu/python/2022/
+https://ossu.firebaseapp.com/#/curriculum
+https://github.com/ossu
+
+As I had some exposure to Python before, the first week was relatively easy. These problems were covered: 
+Functions. Arguments. Side Effects. Bugs. Return Values. Variables. Comments. Pseudocode. str. Parameters. int. Operators. Interactive Mode. float. def. Scope. return.
+
+At the end of the lecture, you can find a problem set, which is 5 different coding problems to solve to consolidate your knowledge. 
+I do consult to documentation frequently. I am most of the time on the right track, using the suitable function, but I can get lost in the syntax and the logic,
+how to structure that code so it executes as I want it. 
+
+Luckily, there are hints, you can click on, and tests you can use to check if your code works as  required. 
+
+After I submitted the problems, the solutions, I started the next week's lecture about conditionals - if. elif. else. or. and. bool. match.
+This is more "exciting" as you can express more then with 'mere' functions only.
+
+Things I need to focus on:
+I need to start speaking using technical terms. 
+I need to comment my code, to explain wat I did. This is just for myself during my studies. 
+
