@@ -1,1 +1,39 @@
 Week 2 at CS50P is all about loops, and the following keywords: while. for. list. range. continue. break. list. len. dict. None.
+It has been a while when I learnt the basics of Python so I couldn't remember but apparently, there are no arrays as a built-in data type in Python.
+You can use lists, or you can import NumPy if your needs require of the usage of arrays.
+In Python, there isn't a built-in data type called "array" like in some other languages, but you can use lists in many of the same ways you would use arrays in other languages. However, depending on your needs, you might want to consider alternatives:
+
+Python lists can be used similarly to arrays in other languages because they support indexing, slicing, and a variety of built-in methods for manipulation.
+- **Mixed Types**: Unlike arrays in languages like C or Java, Python lists can hold elements of different data types.
+- **Dynamic Size**: Python lists can grow or shrink dynamically, which is not typical for arrays in other languages.
+
+When to Use What?
+Use Python Lists: If you need a general-purpose collection that can store mixed data types and you don't have performance constraints, lists are perfectly fine and very convenient.
+Use `array` Module: If you need an array of uniform data types but don't require the advanced capabilities of NumPy.
+Use NumPy: If you're working with large datasets, need multi-dimensional arrays, or require advanced mathematical operations, NumPy is the way to go.
+
+### Python Lists
+
+Python lists are versatile, dynamic containers that can hold elements of various data types, 
+including integers, strings, and even other lists. They are created using square brackets, e.g., `my_list = [1, 2, 3]`, 
+and support a wide range of operations such as indexing, slicing, and methods like `append()` and `remove()`. 
+Lists are ideal for general-purpose storage of items when the number of elements is unknown or can change over time. 
+They offer flexibility and ease of use for most common programming tasks.
+
+### Difference from Arrays
+
+Arrays, specifically from the `array` module or libraries like NumPy, are more restrictive compared to Python lists. 
+Arrays require all elements to be of the same type, which allows for more efficient memory usage and faster operations for numerical data. 
+While Python lists are dynamically sized and can contain mixed data types, 
+arrays are fixed in type and size (in the case of the `array` module) and 
+are generally used when performance and memory efficiency are critical, such as in large-scale numerical computations.
+
+### Python Dictionaries
+
+Python dictionaries are key-value pairs stored in an unordered collection, 
+created using curly braces, e.g., `my_dict = {"key1": "value1", "key2": "value2"}`. 
+Unlike lists, dictionaries use unique keys to access values, making them ideal for cases where quick lookups, insertions, and deletions by key are required. 
+They are particularly useful for associating unique identifiers with data, like storing user profiles or configuration settings. D
+ictionaries provide efficient, meaningful access to data when the relationship between keys and values is crucial.
+
+
