@@ -1,0 +1,100 @@
+I finished the first 2 chapters at CS50P, and I am realising that I need a clear and also adjustable blueprint on how to solve coding problems. 
+Hopefully, the systematic approach will help to be able to finish these problems easier. 
+
+The example problem is:
+Suppose that a machine sells bottles of Coca-Cola (Coke) for 50 cents and only accepts coins in these denominations: 25 cents, 10 cents, and 5 cents.
+In a file called coke.py, implement a program that prompts the user to insert a coin, one at a time, each time informing the user of the amount due. 
+Once the user has inputted at least 50 cents, output how many cents in change the user is owed. 
+Assume that the user will only input integers, and ignore any integer that isn’t an accepted denomination.
+
+
+### Step 1: **Understand the Problem**
+  
+   - **Clarify**: What does the problem require?  
+     - Input: Coins in denominations of 25, 10, and 5 cents.
+     - Output: Amount of change owed.
+     - Constraints: Ignore any coins that aren’t in these denominations.
+
+   - **Edge Cases**: Consider scenarios like:
+     - User inputs exactly 50 cents.
+     - User inputs more than 50 cents.
+     - User inputs a coin that isn't accepted.
+
+### Step 2: **Plan Your Approach**
+   - **Decompose the Problem**:
+     1. **Initialize** the total amount due (50 cents).
+     2. **Prompt** the user to insert coins repeatedly until the total amount is met or exceeded.
+     3. **Validate** the coin inserted (i.e., is it 25, 10, or 5 cents?).
+     4. **Update** the amount due by subtracting the inserted coin value.
+     5. **Check** if the total inserted is at least 50 cents.
+     6. **Output** the change if the user overpays.
+
+   - **Pseudocode**:
+     ```plaintext
+     Set total_cost to 50 cents
+     Set total_inserted to 0
+
+     While total_inserted < total_cost:
+         Prompt user to insert a coin
+         If coin is valid (25, 10, or 5):
+             Add coin to total_inserted
+         Calculate remaining amount due
+         Inform user of the remaining amount
+
+     If total_inserted > total_cost:
+         Calculate and display change
+     ```
+
+### Step 3: **Write the Code**
+   - **Translate Pseudocode to Code**: Implement the pseudocode step-by-step.
+
+```python
+# coke.py
+total_cost = 50
+total_inserted = 0
+
+while total_inserted < total_cost:
+    coin = int(input("Insert coin: "))
+    
+    # Check if the inserted coin is valid
+    if coin in [25, 10, 5]:
+        total_inserted += coin
+    else:
+        print("Invalid coin.")
+        continue
+    
+    # Calculate and inform the user about the amount due
+    amount_due = total_cost - total_inserted
+    if amount_due > 0:
+        print(f"Amount due: {amount_due} cents")
+
+# Calculate and display change if any
+if total_inserted > total_cost:
+    change = total_inserted - total_cost
+    print(f"Change owed: {change} cents")
+else:
+    print("Exact amount paid. No change owed.")
+```
+
+### Step 4: **Test the Solution**
+   - **Test with Different Inputs**:
+     - Insert coins that add up exactly to 50 cents.
+     - Insert more than 50 cents to see if the change is calculated correctly.
+     - Insert an invalid coin (e.g., 1 cent) to check if it is ignored.
+
+   - **Example Tests**:
+     - Input: 25, 25 → Output: No change owed.
+     - Input: 25, 10, 10, 10 → Output: Change owed: 5 cents.
+     - Input: 5, 1, 10, 5, 25, 5 → Output: Invalid coin (ignore 1 cent), Change owed: 0 cents.
+
+### Step 5: **Optimize and Refine**
+   - **Consider Edge Cases**: Handle cases like non-integer inputs or coins that are not recognized.
+   - **Refactor**: Simplify the code if possible, improve readability, or add comments.
+
+   - **Final Code**: Ensure that the final solution is efficient, readable, and handles all possible edge cases.
+
+### Step 6: **Reflect and Iterate**
+   - **Reflect**: Think about the problem-solving approach used. Could it be applied to other problems?
+   - **Iterate**: Learn from any mistakes or inefficiencies and apply these lessons to future problems.
+
+By following this step-by-step blueprint, you can systematically solve coding problems with clarity and confidence.
