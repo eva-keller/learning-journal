@@ -36,4 +36,18 @@ Unlike lists, dictionaries use unique keys to access values, making them ideal f
 They are particularly useful for associating unique identifiers with data, like storing user profiles or configuration settings. D
 ictionaries provide efficient, meaningful access to data when the relationship between keys and values is crucial.
 
+### Problems set02
+I only solved three of them today. Mainly as I am taking my time now to understand what I am doing. 
+When I read the task, I try to write the pseudo code first, to get into the habit of breaking things down to the smallest actions. 
+Well, after 5 days, it is actually alright. Of course, I do find that I could have broken the problem down to even more steps, 
+but this will come. 
+So far, I don't even know what is possible in Python. 
 
+I use chatgpt a lot, to explain things, error messages and rephrasing what I say so I can get used to the more technical way of talking. 
+I write a piece of code, and I ask it, is it a good way to do it like that, what could be improved, but I refrain from asking for a full code. That wouldn't be helpful.
+I feel like I am learning a lot, but because of the usage of chatgpt, I also feel like a fraud in a way. 
+
+I am saving all the questions and explanations I had, so at the weekend I can write the blog articles. 
+
+Overall, it's not going bad at all. Of course, I don't work at the moment, so I have the full day for myself. We will see, how it is going to be later. 
+I just keep telling myself, I have 3 years to learn all this, so I shouldn't stress if I feel like I am slow. 
